@@ -1,1 +1,1 @@
-console.log("Testing first Script")
+console.log("Testing first Script");

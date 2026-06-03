@@ -209,5 +209,26 @@ console.log(netBalance); // Output: 1000 - 200 + 500 - 300 = 1000
 
 
 
+//Array of Functions 
+//Sort
 
+//Sort example:
+let numbers9 = [5, 2, 9, 1, 5, 6];
+numbers9.sort((a, b) => a - b);
+console.log(numbers9);
+// Output: [1, 2, 5, 5, 6, 9]
+let fruits3 = ["banana", "apple", "cherry"];
+fruits3.sort();
+console.log(fruits3);
+// Output: ["apple", "banana", "cherry"]    
+//Natural sort example:
+let mixedArray = ["10", "2", "1", "20"];
+mixedArray.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+console.log(mixedArray);
+// Output: ["1", "2", "10", "20"]
+//Lexical sort example:
+let words2 = ["apple", "Banana", "cherry", "date"];
+words2.sort((a, b) => a.localeCompare(b));
+console.log(words2);
+// Output: ["Banana", "apple", "cherry", "date"]
 
